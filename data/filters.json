@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "id": "age",
+      "label": "Age",
+      "options": ["Youth", "Adult", "Senior", "All Ages"]
+    },
+    {
+      "id": "sport",
+      "label": "Sport",
+      "options": ["Basketball", "Volleyball", "Kickball", "Bean Bags", "Other"]
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "options": ["Women", "Men", "Co-Rec"]
+    },
+    {
+      "id": "days",
+      "label": "Days of the Week",
+      "options": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    }
+  ]
+}

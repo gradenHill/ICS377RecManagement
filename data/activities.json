@@ -1,0 +1,161 @@
+[
+    {
+        "id": "3",
+        "name": "Youth Basketball",
+        "abbr": "BBK",
+        "category": "Sports",
+        "description": "Dribbling, shooting, and teamwork for young athletes.",
+        "minAge": 7,
+        "maxAge": 14,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Tue/Thu Afterschool", "price": "55.00", "days": ["Tuesday", "Thursday"] },
+            { "name": "Saturday League", "price": "65.00", "days": ["Saturday"] }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Adult Volleyball",
+        "abbr": "VOL",
+        "category": "Sports",
+        "description": "Co-rec competitive and recreational league play.",
+        "minAge": 18,
+        "maxAge": 99,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Monday Night Rec", "price": "40.00", "days": ["Monday"] },
+            { "name": "Wednesday Competitive", "price": "40.00", "days": ["Wednesday"] }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Beginning Swim Lessons",
+        "abbr": "SWM",
+        "category": "Aquatics",
+        "description": "Basic water safety and stroke introduction.",
+        "minAge": 4,
+        "maxAge": 10,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Morning Splash", "price": "50.00", "days": ["Monday", "Wednesday", "Friday"] }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Senior Yoga",
+        "abbr": "YGA",
+        "category": "Fitness",
+        "description": "Gentle stretching and balance for active seniors.",
+        "minAge": 60,
+        "maxAge": 120,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Thursday Morning Zen", "price": "25.00", "days": ["Thursday"] }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Pickleball Open Play",
+        "abbr": "PKL",
+        "category": "Sports",
+        "description": "Fun, social play for the fastest growing sport in America.",
+        "minAge": 18,
+        "maxAge": 120,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Weekday Morning", "price": "15.00", "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+            { "name": "Sunday Funday", "price": "20.00", "days": ["Sunday"] }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Youth Art Studio",
+        "abbr": "ART",
+        "category": "Arts",
+        "description": "Painting, sketching, and creative exploration.",
+        "minAge": 6,
+        "maxAge": 12,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Wednesday Workshop", "price": "35.00", "days": ["Wednesday"] }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Zumba Fitness",
+        "abbr": "ZBA",
+        "category": "Fitness",
+        "description": "High-energy dance workout for all fitness levels.",
+        "minAge": 16,
+        "maxAge": 99,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Tuesday Night Dance", "price": "12.00", "days": ["Tuesday"] }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Toddler Tumbling",
+        "abbr": "GYM",
+        "category": "Sports",
+        "description": "Introduction to movement and motor skills for toddlers.",
+        "minAge": 2,
+        "maxAge": 5,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Friday Fun", "price": "40.00", "days": ["Friday"] }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Competitive Swim Team",
+        "abbr": "CST",
+        "category": "Aquatics",
+        "description": "Advanced training and swim meet preparation.",
+        "minAge": 8,
+        "maxAge": 18,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Evening Practice", "price": "120.00", "days": ["Monday", "Tuesday", "Wednesday", "Thursday"] }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Teen Cooking Class",
+        "abbr": "COK",
+        "category": "Other",
+        "description": "Learning basic kitchen skills and healthy recipes.",
+        "minAge": 13,
+        "maxAge": 17,
+        "allowedGenders": ["Male", "Female", "Non-Binary"],
+        "sections": [
+            { "name": "Saturday Chef", "price": "45.00", "days": ["Saturday"] }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Men's Softball League",
+        "abbr": "SFT",
+        "category": "Sports",
+        "description": "Competitive men's slow-pitch softball.",
+        "minAge": 18,
+        "maxAge": 99,
+        "allowedGenders": ["Male"],
+        "sections": [
+            { "name": "Friday Doubleheaders", "price": "75.00", "days": ["Friday"] }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Women's Self-Defense",
+        "abbr": "DEF",
+        "category": "Fitness",
+        "description": "Empowering safety techniques and awareness.",
+        "minAge": 14,
+        "maxAge": 99,
+        "allowedGenders": ["Female"],
+        "sections": [
+            { "name": "Empowerment Seminar", "price": "20.00", "days": ["Sunday"] }
+        ]
+    }
+]

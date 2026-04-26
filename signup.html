@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Apple Valley Parks & Rec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .signup-card {
+            max-width: 450px;
+            border-radius: 1.5rem;
+            border: 1px solid #dee2e6;
+        }
+        .form-control-custom {
+            background-color: #f8f9fa;
+            border-radius: 0.75rem;
+            border: 1px solid #ced4da;
+            padding: 0.6rem 1rem;
+        }
+        .btn-signup {
+            background-color: #2d2f3b;
+            color: white;
+            border-radius: 1rem;
+            padding: 0.75rem 2.5rem;
+            font-weight: bold;
+        }
+        .btn-signup:hover {
+            background-color: #1a1c24;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="p-4">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="assets/img/AVlogo.png" alt="Logo" width="40" height="40" class="me-2">
+            <div class="lh-1">
+                <span class="fw-bold fs-4">Apple Valley</span><br>
+                <small class="text-muted" style="font-size: 0.75rem;">Parks & Recreation</small>
+            </div>
+        </a>
+    </header>
+
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="card signup-card shadow-sm p-5">
+            <h1 class="text-center fw-bold mb-4">Sign Up</h1>
+            
+            <form id="signup-form">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Name</label>
+                    <input type="text" class="form-control form-control-custom" placeholder="John Doe" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Age</label>
+                    <input type="number" class="form-control form-control-custom" placeholder="38" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold d-block">Gender</label>
+                    <div class="d-flex gap-3 mt-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female" checked>
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="non-binary" value="non-binary">
+                            <label class="form-check-label" for="non-binary">Non-Binary</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" class="form-control form-control-custom" placeholder="john.doe@gmail.com" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Password</label>
+                    <input type="password" class="form-control form-control-custom" placeholder="**********" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-signup">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p class="mt-4 text-center text-muted" style="font-size: 0.9rem;">
+        Already have an account? 
+        <a href="#" id="login-info-link" class="text-dark fw-bold text-decoration-none border-bottom border-dark">Log In</a>
+    </p>
+
+    <div class="modal fade" id="prototypeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="fw-bold">Prototype Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-info-circle fs-1 text-muted"></i>
+                    </div>
+                    <p class="mb-0 text-muted">
+                        This is a **High-Fidelity Prototype**. To fulfill our research goals for an "Aesthetic and Minimalist" experience, we use local browser storage instead of a permanent database.
+                    </p>
+                    <hr class="my-4">
+                    <p class="fw-bold">Permanent accounts do not exist yet. Please use the Sign Up form to create a temporary session!</p>
+                    <button type="button" class="btn btn-dark w-100 py-3 rounded-pill mt-3 fw-bold" data-bs-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
