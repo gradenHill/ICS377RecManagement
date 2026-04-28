@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `).join('');
 
-        // Handle button clicks
         document.querySelectorAll('.add-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 currentSection = {
@@ -44,21 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Final "Select" step logic
     document.querySelectorAll('.member-select-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const member = e.currentTarget.dataset.member;
-            
-            // 1. Save to localStorage (Fulfills Cart Functionality)
             const cart = JSON.parse(localStorage.getItem('cart') || '[]');
             cart.push({ ...currentSection, member });
             localStorage.setItem('cart', JSON.stringify(cart));
-
-            // 2. Visual Feedback (Cart Responsiveness)
             memberModal.hide();
             alert(`Success! ${currentSection.name} added to cart for ${member}.`);
-            
-            // Redirect or update cart icon here
         });
     });
 });

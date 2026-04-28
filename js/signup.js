@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signup-form');
     const loginLink = document.getElementById('login-info-link');
     const protoModal = new bootstrap.Modal(document.getElementById('prototypeModal'));
-
-    // Trigger the Prototype info popup
     if (loginLink) {
         loginLink.onclick = (e) => {
             e.preventDefault();
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             age: signupForm.querySelector('input[type="number"]').value,
             email: signupForm.querySelector('input[type="email"]').value,
             gender: signupForm.querySelector('input[name="gender"]:checked').value,
-            address: "" // Initializing as blank for new users
+            address: ""
         };
 
         localStorage.setItem('user', JSON.stringify(userData));

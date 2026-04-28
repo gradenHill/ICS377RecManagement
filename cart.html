@@ -8,63 +8,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
-        <div class="container-fluid px-4">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="/img/AVLogo.png" alt="Logo" width="auto" height="40" class="me-2">
+    <nav class="site-header navbar navbar-expand-lg">
+        <div class="header-container">
+            <a class="brand-logo" href="index.html">
+                <img src="/img/AVLogo.png" alt="Logo" height="40">
             </a>
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">ACTIVITIES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rentals.html">RENTALS</a></li>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse center-nav" id="navbarNav">
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">ACTIVITIES</a></li>
+                    <li><a class="nav-link" href="rentals.html">RENTALS</a></li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center gap-4">
-                <a href="account.html" id="main-nav-link" class="text-decoration-none text-dark fw-bold">ACCOUNT</a>
-                <a href="cart.html" class="text-dark position-relative">
-                    <i class="bi bi-cart3 fs-4"></i>
-                    <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none" style="font-size: 0.6rem;">0</span>
+
+            <div class="user-actions">
+                <a href="account.html" id="main-nav-link" class="account-link">ACCOUNT</a>
+                <a href="cart.html" class="cart-link" style="color: #0284c7;">
+                    <i class="bi bi-cart3 cart-icon"></i>
+                    <span id="cart-badge" class="cart-badge d-none">0</span>
                 </a>
             </div>
         </div>
     </nav>
 
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-8">
+    <div class="page-container">
+        <div class="row gx-5">
+            <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="mb-4">
-                    <a href="index.html" class="btn btn-link text-dark text-decoration-none p-0">
+                    <a href="index.html" class="back-link">
                         <i class="bi bi-arrow-left me-2"></i>Continue Browsing
                     </a>
                 </div>
 
-                <h2 class="fw-bold mb-4">Your Shopping Cart</h2>
+                <h2 class="fw-bold mb-4" style="color: #0f172a;">Your Shopping Cart</h2>
                 
-                <div id="cart-items-list" class="d-flex flex-column gap-3">
+                <div id="cart-items-list" class="activity-list">
                     </div>
-
             </div>
 
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 20px;">
-                    <h5 class="fw-bold mb-4">Order Summary</h5>
-                    <div class="d-flex justify-content-between mb-2">
+            <div class="col-lg-4">
+                <div class="summary-card sticky-top" style="top: 20px;">
+                    <h5 class="fw-bold mb-4" style="color: #0f172a;">Order Summary</h5>
+                    <div class="d-flex justify-content-between mb-3 text-secondary fw-medium">
                         <span>Subtotal</span>
                         <span id="cart-subtotal">$0.00</span>
                     </div>
-                    <div class="d-flex justify-content-between mb-4">
+                    <div class="d-flex justify-content-between mb-4 text-secondary fw-medium">
                         <span>Processing Fee</span>
                         <span>$0.00</span>
                     </div>
-                    <hr>
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="fw-bold fs-5">Total</span>
-                        <span id="cart-total" class="fw-bold fs-5 text-success">$0.00</span>
+                    <hr style="border-color: #e2e8f0;">
+                    <div class="d-flex justify-content-between mb-4 mt-3">
+                        <span class="fw-bold fs-5" style="color: #0f172a;">Total</span>
+                        <span id="cart-total" class="fw-bold fs-5 total-price">$0.00</span>
                     </div>
-                    <button id="checkout-btn" class="btn btn-dark w-100 py-3 fw-bold rounded-pill shadow">
+                    <button id="checkout-btn" class="btn-primary w-100 py-3">
                         Proceed to Checkout
                     </button>
                 </div>
@@ -72,6 +76,8 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
     <script src="js/cart.js"></script>
 </body>
 </html>
