@@ -568,3 +568,44 @@ ul {
     border: 1px solid #e2e8f0;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
+
+.catalog-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+    gap: 10px;
+    border-bottom: 2px solid var(--slate-200);
+}
+
+.catalog-tab-btn {
+    background: #fff;
+    border: 1px solid var(--slate-200);
+    border-bottom: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--slate-600);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    outline: none;
+    
+    border-radius: 8px 8px 0 0; 
+    
+    position: relative;
+    bottom: -2px;
+    z-index: 1;
+}
+
+.catalog-tab-btn:hover {
+    color: var(--primary);
+    background-color: var(--slate-50);
+}
+
+.catalog-tab-btn.active {
+    background-color: #0284c7;
+    color: white;
+    border-bottom: 3px solid var(--primary); 
+    z-index: 2;
+}

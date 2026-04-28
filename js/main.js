@@ -171,6 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderDetail(act, sections) {
+        const genderText = act.allowedGenders ? act.allowedGenders.join(', ') : 'All Genders';
+
         activityContainer.innerHTML = `
             <div class="card border-0 rounded-4 shadow-sm p-4 bg-white">
                 <div class="d-flex justify-content-start align-items-center mb-4 border-bottom pb-3">
@@ -185,7 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${sections.length > 0 ? sections.map(sec => `
                         <div class="card p-3 border rounded-3 shadow-sm">
                             <div class="d-flex justify-content-between align-items-center">
-                                <div><span class="fw-bold text-dark">${sec.name}</span></div>
+                                <div>
+                                    <span class="fw-bold text-dark d-block mb-1">${sec.name}</span>
+                                    <div class="small text-muted">
+                                        Eligible: <span class="fw-medium">${genderText}</span>
+                                    </div>
+                                </div>
                                 <div class="d-flex align-items-center gap-3">
                                     <span class="fw-bold text-dark fs-5">$${sec.price}</span>
                                     <button class="btn-primary cart-trigger" 
@@ -302,10 +309,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderTabs() {
         if (!tabContainer) return;
+        
+        // Extract unique categories from activities
         const categories = [...new Set(activities.map(a => a.category))];
         
+        // Render buttons directly into the container
         tabContainer.innerHTML = 
-            `<button class="catalog-tab-btn active" data-tab="All">All</button>` +
+            `<button class="catalog-tab-btn active" data-tab="All">All Activities</button>` +
             categories.map(c => `<button class="catalog-tab-btn" data-tab="${c}">${c}</button>`).join('');
     }
 

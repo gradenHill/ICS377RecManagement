@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         localStorage.clear();
         const genderRaw = signupForm.querySelector('input[name="gender"]:checked').value;
-        const gender = genderRaw.charAt(0).toUpperCase() + genderRaw.slice(1); // Converts 'male' to 'Male'
+        const gender = genderRaw.charAt(0).toUpperCase() + genderRaw.slice(1); // Capitalizes it correctly
 
         const userData = {
             name: signupForm.querySelector('input[type="text"]').value,
             age: signupForm.querySelector('input[type="number"]').value,
             email: signupForm.querySelector('input[type="email"]').value,
-            gender: signupForm.querySelector('input[name="gender"]:checked').value,
-            address: ""
+            gender: gender, 
+            address: "" 
         };
 
         localStorage.setItem('user', JSON.stringify(userData));

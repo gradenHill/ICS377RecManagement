@@ -173,7 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
             isEditing = false;
             editOldName = "";
             addMemberForm.reset();
-            document.getElementById('g-male').checked = true; 
+            document.getElementById('g-female').checked = true; 
+            const addBtn = document.getElementById('open-add-member');
             if (modalTitle) modalTitle.innerText = "Add Household Member";
             if(addMemberModal) addMemberModal.show();
         };
@@ -191,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (addPaymentBtn) {
         addPaymentBtn.onclick = () => alert("This prototype ends here. In production, this would open a secure payment form.");
     }
-    
+
     renderAddress();
     renderMembers();
 });

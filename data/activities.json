@@ -15,7 +15,7 @@
     },
     {
         "id": "4",
-        "name": "Adult Volleyball",
+        "name": "Co-Rec Volleyball",
         "abbr": "VOL",
         "category": "Sports",
         "description": "Co-rec competitive and recreational league play.",
@@ -156,6 +156,20 @@
         "allowedGenders": ["Female"],
         "sections": [
             { "name": "Empowerment Seminar", "price": "20.00", "days": ["Sunday"] }
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Women's Volleyball",
+        "abbr": "VOL",
+        "category": "Sports",
+        "description": "Women's competitive and recreational league play.",
+        "minAge": 18,
+        "maxAge": 99,
+        "allowedGenders": ["Female"],
+        "sections": [
+            { "name": "Monday Night Rec", "price": "40.00", "days": ["Monday"] },
+            { "name": "Wednesday Competitive", "price": "40.00", "days": ["Wednesday"] }
         ]
     }
 ]
